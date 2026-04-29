@@ -217,91 +217,53 @@
     <h4 class="other-pages-headings">Configure your first invoice</h4>
             <div class="sb-onboard__body">
                 <main class="sb-onboard__main" id="sb-onboard-main">
-                    <div class="sb-usage-step">
-                        <h2 class="sb-usage-step__title">Define your usage line items</h2>
-                        <p class="sb-usage-step__lead">
-                            Usage line items are variable fees based on usage events sent from your product to Telgoo5.
-                            <a href="#" class="sb-usage-step__learn">Learn more about the full power of usage in Telgoo5
-                                <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
-                        </p>
-
-                        <div class="sb-usage-card">
-                            <div class="sb-usage-card__head">
-                                <span class="sb-usage-card__title">CPU hours</span>
-                                <button type="button" class="sb-usage-card__delete" aria-label="Remove usage line item">
-                                    <i class="fas fa-trash-alt" aria-hidden="true"></i>
-                                </button>
+                    <div class="sb-invoice-done">
+                        <header class="sb-invoice-done__hero">
+                            <div class="sb-invoice-done__badge" aria-hidden="true">
+                                <i class="fas fa-check"></i>
                             </div>
-                            <div class="sb-usage-card__grid">
-                                <div class="sb-usage-field">
-                                    <label for="sb-usage-name">Name</label>
-                                    <input id="sb-usage-name" type="text" value="CPU hours" autocomplete="off">
-                                </div>
-                                <div class="sb-usage-field">
-                                    <label for="sb-usage-event">Event type <span class="sb-usage-field__hint-icon" title="Event identifier sent by your app"><i class="fas fa-info-circle" aria-hidden="true"></i></span></label>
-                                    <input id="sb-usage-event" type="text" value="compute.usage" autocomplete="off">
-                                </div>
-                                <div class="sb-usage-field">
-                                    <label for="sb-usage-quantity-by">Quantity calculated by</label>
-                                    <div class="sb-usage-select-wrap">
-                                        <select id="sb-usage-quantity-by" aria-describedby="sb-usage-quantity-help">
-                                            <option value="sum" selected>sum</option>
-                                            <option value="max">max</option>
-                                            <option value="last">last</option>
-                                        </select>
-                                    </div>
-                                    <p id="sb-usage-quantity-help" class="sb-usage-field__help">Sum the values of all matching events</p>
-                                </div>
-                                <div class="sb-usage-field">
-                                    <label for="sb-usage-field-sum">Field to sum on</label>
-                                    <input id="sb-usage-field-sum" type="text" value="cpu.seconds" autocomplete="off">
-                                </div>
-                            </div>
+                            <h2 class="sb-invoice-done__title">Congratulations!</h2>
+                            <p class="sb-invoice-done__lead">
+                                You’ve set up the building blocks of your pricing. On the right is a preview of your first invoice.
+                            </p>
+                        </header>
 
-                            <div class="sb-usage-toggle-block">
-                                <label class="sb-usage-toggle">
-                                    <input type="checkbox" class="sb-usage-toggle__input" checked>
-                                    <span class="sb-usage-toggle__track" aria-hidden="true"><span class="sb-usage-toggle__knob"></span></span>
-                                    <span class="sb-usage-toggle__label"><b>Price differently by usage attributes</b> (e.g. llm_model, hardware_tier, region)</span>
-                                </label>
+                        <section class="sb-invoice-done__panel" aria-labelledby="invoice-done-next-heading">
+                            <h3 id="invoice-done-next-heading" class="sb-invoice-done__h">So what’s next?</h3>
+                            <p class="sb-invoice-done__p">
+                                We created a Test Contract to demonstrate your pricing using a concrete example. Next, we recommend
+                                editing the Test Contract to model your typical customer relationship.
+                            </p>
+                            <a href="#" class="sb-onboard__btn sb-onboard__btn--apply sb-invoice-done__cta">
+                                Go to Contract
+                                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                            </a>
+                        </section>
 
-                                <div class="sb-usage-attrs">
-                                    <div class="sb-usage-attrs__grid sb-usage-attrs__grid--head">
-                                        <span>Attribute</span>
-                                        <span>Possible values</span>
-                                    </div>
-                                    <div class="sb-usage-attrs__grid">
-                                        <div class="sb-usage-attrs__cell">
-                                            <input type="text" value="Text" aria-label="Attribute name" placeholder="e.g. llm_model">
-                                            <span class="sb-usage-field__help">e.g. llm_model</span>
-                                        </div>
-                                        <div class="sb-usage-attrs__cell">
-                                            <div class="sb-usage-tags" aria-label="Possible values">
-                                                <span class="sb-usage-tag">Claude <button type="button" class="sb-usage-tag__remove" aria-label="Remove Claude">&times;</button></span>
-                                                <span class="sb-usage-tag">5.4 <button type="button" class="sb-usage-tag__remove" aria-label="Remove 5.4">&times;</button></span>
-                                                <input type="text" class="sb-usage-tags__input" placeholder="Add value…" aria-label="Add possible value">
-                                            </div>
-                                            <span class="sb-usage-field__help">e.g. gpt-4, gpt-3-mini, gpt-3-turbo</span>
-                                        </div>
-                                    </div>
-                                    <div class="sb-usage-attrs__grid sb-usage-attrs__grid--add">
-                                        <div class="sb-usage-attrs__cell">
-                                            <input type="text" aria-label="Additional attribute name" placeholder="">
-                                        </div>
-                                        <div class="sb-usage-attrs__cell">
-                                            <input type="text" aria-label="Additional possible values" placeholder="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="sb-usage-step__footer-actions">
-                            <button type="button" class="sb-onboard__btn sb-onboard__btn--outline sb-usage-add-btn">
-                                <span aria-hidden="true">+ </span>Add usage line item
-                            </button>
-                            <button type="button" class="sb-usage-catalog-link">Show usage template catalog</button>
-                        </div>
+                        <section class="sb-invoice-done__guides" aria-labelledby="invoice-done-guides-heading">
+                            <h3 id="invoice-done-guides-heading" class="sb-invoice-done__h">See what’s possible with Telgoo5</h3>
+                            <p class="sb-invoice-done__p sb-invoice-done__p--muted">
+                                To finish setting up your business model, use our step-by-step guides.
+                            </p>
+                            <nav class="sb-invoice-done__link-grid" aria-label="Telgoo5 documentation">
+                                <a href="#" class="sb-invoice-done__guide-card">
+                                    <span class="sb-invoice-done__guide-label">Basics home</span>
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="sb-invoice-done__guide-card">
+                                    <span class="sb-invoice-done__guide-label">API quickstart</span>
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="sb-invoice-done__guide-card">
+                                    <span class="sb-invoice-done__guide-label">How Telgoo5 works</span>
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="sb-invoice-done__guide-card">
+                                    <span class="sb-invoice-done__guide-label">Send usage events</span>
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                </a>
+                            </nav>
+                        </section>
                     </div>
                 </main>
 
@@ -340,23 +302,23 @@
                                     <td>
                                         <div class="sb-onboard__charge-cell">
                                             <span class="sb-onboard__charge-name">CPU hours</span>
-                                            <span class="sb-onboard__charge-sub">Text: Claude</span>
+                                            <span class="sb-onboard__charge-sub">incl. Claude</span>
                                         </div>
                                     </td>
                                     <td>500</td>
-                                    <td>—</td>
-                                    <td class="sb-onboard__td-end">$0.00</td>
+                                    <td>$7.00</td>
+                                    <td class="sb-onboard__td-end">$3,500.00</td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <div class="sb-onboard__charge-cell">
                                             <span class="sb-onboard__charge-name">CPU hours</span>
-                                            <span class="sb-onboard__charge-sub">Text: 5.4</span>
+                                            <span class="sb-onboard__charge-sub">incl. 4</span>
                                         </div>
                                     </td>
                                     <td>500</td>
-                                    <td>—</td>
-                                    <td class="sb-onboard__td-end">$0.00</td>
+                                    <td>$6.00</td>
+                                    <td class="sb-onboard__td-end">$3,000.00</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -365,12 +327,12 @@
                         <span class="sb-onboard__subtotals-label">Subtotals</span>
                         <div class="sb-onboard__subtotals-row">
                             <span>USD</span>
-                            <span>$31.00</span>
+                            <span>$6,531.00</span>
                         </div>
                     </div>
                     <div class="sb-onboard__total">
                         <span>Total due</span>
-                        <span class="sb-onboard__total-amount">$31.00 USD</span>
+                        <span class="sb-onboard__total-amount">$6,531.00 USD</span>
                     </div>
                 </aside>
             </div>
@@ -380,15 +342,17 @@
                 <p class="sb-onboard__steps" aria-label="Setup steps">
                     <span class="sb-onboard__step">1. Subscriptions</span>
                     <span class="sb-onboard__steps-sep" aria-hidden="true"></span>
-                    <span class="sb-onboard__step sb-onboard__step--current">2. Usage</span>
+                    <span class="sb-onboard__step">2. Usage</span>
                     <span class="sb-onboard__steps-sep" aria-hidden="true"></span>
                     <span class="sb-onboard__step">3. Prices</span>
                     <span class="sb-onboard__steps-sep" aria-hidden="true"></span>
-                    <span class="sb-onboard__step">4. Next steps</span>
+                    <span class="sb-onboard__step sb-onboard__step--current">4. Next steps</span>
                 </p>
-                <div class="sb-onboard__footer-actions">
-                    <a href="sandbox.html" class="sb-onboard__btn sb-onboard__btn--outline">Back</a>
-                    <a href="prices.html" class="sb-onboard__btn sb-onboard__btn--primary">Next</a>
+                <div class="sb-onboard__footer-actions sb-onboard__footer-actions--end">
+                    <a href="#" class="sb-onboard__btn sb-onboard__btn--apply sb-invoice-done__footer-cta">
+                        Go to Contract
+                        <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                    </a>
                 </div>
             </footer>
         </div>

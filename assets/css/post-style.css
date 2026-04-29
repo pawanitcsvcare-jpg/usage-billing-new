@@ -473,7 +473,7 @@ ol.comment-list .comment-respond {
 }
 /* Select Arrow */
 select {
-	height: 55px;
+	height: auto;
 	  -webkit-appearance: none;
 	  -moz-appearance: none;
 	  appearance: none;

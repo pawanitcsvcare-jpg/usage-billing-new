@@ -217,91 +217,84 @@
     <h4 class="other-pages-headings">Configure your first invoice</h4>
             <div class="sb-onboard__body">
                 <main class="sb-onboard__main" id="sb-onboard-main">
-                    <div class="sb-usage-step">
-                        <h2 class="sb-usage-step__title">Define your usage line items</h2>
-                        <p class="sb-usage-step__lead">
-                            Usage line items are variable fees based on usage events sent from your product to Telgoo5.
-                            <a href="#" class="sb-usage-step__learn">Learn more about the full power of usage in Telgoo5
-                                <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+                    <div class="sb-apply-step">
+                        <h2 class="sb-apply-step__title">Apply settings?</h2>
+                        <p class="sb-apply-step__lead">
+                            We will now create Telgoo5 objects corresponding to your settings. To learn more, go to
+                            <a href="#" class="sb-usage-step__learn">Telgoo5 objects <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.
                         </p>
 
-                        <div class="sb-usage-card">
-                            <div class="sb-usage-card__head">
-                                <span class="sb-usage-card__title">CPU hours</span>
-                                <button type="button" class="sb-usage-card__delete" aria-label="Remove usage line item">
-                                    <i class="fas fa-trash-alt" aria-hidden="true"></i>
-                                </button>
-                            </div>
-                            <div class="sb-usage-card__grid">
-                                <div class="sb-usage-field">
-                                    <label for="sb-usage-name">Name</label>
-                                    <input id="sb-usage-name" type="text" value="CPU hours" autocomplete="off">
+                        <ul class="sb-apply-summary">
+                            <li class="sb-apply-card">
+                                <div class="sb-apply-card__icon" aria-hidden="true"><i class="fas fa-bolt"></i></div>
+                                <div class="sb-apply-card__body">
+                                    <h3 class="sb-apply-card__title">1 Billable metric</h3>
+                                    <p class="sb-apply-card__desc">Convert raw usage events into an amount of usage.</p>
+                                    <ul class="sb-apply-card__items">
+                                        <li>CPU hours</li>
+                                    </ul>
                                 </div>
-                                <div class="sb-usage-field">
-                                    <label for="sb-usage-event">Event type <span class="sb-usage-field__hint-icon" title="Event identifier sent by your app"><i class="fas fa-info-circle" aria-hidden="true"></i></span></label>
-                                    <input id="sb-usage-event" type="text" value="compute.usage" autocomplete="off">
+                            </li>
+                            <li class="sb-apply-card">
+                                <div class="sb-apply-card__icon" aria-hidden="true"><i class="fas fa-tag"></i></div>
+                                <div class="sb-apply-card__body">
+                                    <h3 class="sb-apply-card__title">1 Usage product</h3>
+                                    <p class="sb-apply-card__desc">Metered product lines tied to billable metrics for pricing.</p>
+                                    <ul class="sb-apply-card__items">
+                                        <li>CPU hours</li>
+                                    </ul>
                                 </div>
-                                <div class="sb-usage-field">
-                                    <label for="sb-usage-quantity-by">Quantity calculated by</label>
-                                    <div class="sb-usage-select-wrap">
-                                        <select id="sb-usage-quantity-by" aria-describedby="sb-usage-quantity-help">
-                                            <option value="sum" selected>sum</option>
-                                            <option value="max">max</option>
-                                            <option value="last">last</option>
-                                        </select>
-                                    </div>
-                                    <p id="sb-usage-quantity-help" class="sb-usage-field__help">Sum the values of all matching events</p>
+                            </li>
+                            <li class="sb-apply-card">
+                                <div class="sb-apply-card__icon" aria-hidden="true"><i class="fas fa-th-large"></i></div>
+                                <div class="sb-apply-card__body">
+                                    <h3 class="sb-apply-card__title">3 Subscription products</h3>
+                                    <p class="sb-apply-card__desc">Recurring seat and tier charges on the invoice.</p>
+                                    <ul class="sb-apply-card__items">
+                                        <li>Standard Seats</li>
+                                        <li>Pro Seats</li>
+                                        <li>Premium tier</li>
+                                    </ul>
                                 </div>
-                                <div class="sb-usage-field">
-                                    <label for="sb-usage-field-sum">Field to sum on</label>
-                                    <input id="sb-usage-field-sum" type="text" value="cpu.seconds" autocomplete="off">
+                            </li>
+                            <li class="sb-apply-card">
+                                <div class="sb-apply-card__icon" aria-hidden="true"><i class="fas fa-clipboard-list"></i></div>
+                                <div class="sb-apply-card__body">
+                                    <h3 class="sb-apply-card__title">1 Rate card</h3>
+                                    <p class="sb-apply-card__desc">Prices applied when billing this customer.</p>
+                                    <ul class="sb-apply-card__items">
+                                        <li>Test Rate Card</li>
+                                    </ul>
                                 </div>
-                            </div>
-
-                            <div class="sb-usage-toggle-block">
-                                <label class="sb-usage-toggle">
-                                    <input type="checkbox" class="sb-usage-toggle__input" checked>
-                                    <span class="sb-usage-toggle__track" aria-hidden="true"><span class="sb-usage-toggle__knob"></span></span>
-                                    <span class="sb-usage-toggle__label"><b>Price differently by usage attributes</b> (e.g. llm_model, hardware_tier, region)</span>
-                                </label>
-
-                                <div class="sb-usage-attrs">
-                                    <div class="sb-usage-attrs__grid sb-usage-attrs__grid--head">
-                                        <span>Attribute</span>
-                                        <span>Possible values</span>
-                                    </div>
-                                    <div class="sb-usage-attrs__grid">
-                                        <div class="sb-usage-attrs__cell">
-                                            <input type="text" value="Text" aria-label="Attribute name" placeholder="e.g. llm_model">
-                                            <span class="sb-usage-field__help">e.g. llm_model</span>
-                                        </div>
-                                        <div class="sb-usage-attrs__cell">
-                                            <div class="sb-usage-tags" aria-label="Possible values">
-                                                <span class="sb-usage-tag">Claude <button type="button" class="sb-usage-tag__remove" aria-label="Remove Claude">&times;</button></span>
-                                                <span class="sb-usage-tag">5.4 <button type="button" class="sb-usage-tag__remove" aria-label="Remove 5.4">&times;</button></span>
-                                                <input type="text" class="sb-usage-tags__input" placeholder="Add value…" aria-label="Add possible value">
-                                            </div>
-                                            <span class="sb-usage-field__help">e.g. gpt-4, gpt-3-mini, gpt-3-turbo</span>
-                                        </div>
-                                    </div>
-                                    <div class="sb-usage-attrs__grid sb-usage-attrs__grid--add">
-                                        <div class="sb-usage-attrs__cell">
-                                            <input type="text" aria-label="Additional attribute name" placeholder="">
-                                        </div>
-                                        <div class="sb-usage-attrs__cell">
-                                            <input type="text" aria-label="Additional possible values" placeholder="">
-                                        </div>
-                                    </div>
+                            </li>
+                            <li class="sb-apply-card">
+                                <div class="sb-apply-card__icon" aria-hidden="true"><i class="fas fa-user"></i></div>
+                                <div class="sb-apply-card__body">
+                                    <h3 class="sb-apply-card__title">1 Customer</h3>
+                                    <p class="sb-apply-card__desc">The account that will receive this invoice.</p>
+                                    <ul class="sb-apply-card__items">
+                                        <li>Test Customer</li>
+                                    </ul>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="sb-usage-step__footer-actions">
-                            <button type="button" class="sb-onboard__btn sb-onboard__btn--outline sb-usage-add-btn">
-                                <span aria-hidden="true">+ </span>Add usage line item
-                            </button>
-                            <button type="button" class="sb-usage-catalog-link">Show usage template catalog</button>
-                        </div>
+                            </li>
+                            <li class="sb-apply-card">
+                                <div class="sb-apply-card__icon" aria-hidden="true"><i class="fas fa-file-signature"></i></div>
+                                <div class="sb-apply-card__body">
+                                    <h3 class="sb-apply-card__title">1 Contract</h3>
+                                    <p class="sb-apply-card__desc">Terms linking products and pricing to the customer.</p>
+                                    <ul class="sb-apply-card__items">
+                                        <li>Test Contract</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="sb-apply-card">
+                                <div class="sb-apply-card__icon" aria-hidden="true"><i class="fas fa-chart-area"></i></div>
+                                <div class="sb-apply-card__body">
+                                    <h3 class="sb-apply-card__title">1,000+ usage events</h3>
+                                    <p class="sb-apply-card__desc">Synthetic usage events to populate your first invoice.</p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </main>
 
@@ -340,23 +333,23 @@
                                     <td>
                                         <div class="sb-onboard__charge-cell">
                                             <span class="sb-onboard__charge-name">CPU hours</span>
-                                            <span class="sb-onboard__charge-sub">Text: Claude</span>
+                                            <span class="sb-onboard__charge-sub">Tier: Clouds</span>
                                         </div>
                                     </td>
                                     <td>500</td>
-                                    <td>—</td>
-                                    <td class="sb-onboard__td-end">$0.00</td>
+                                    <td>$7.00</td>
+                                    <td class="sb-onboard__td-end">$3,500.00</td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <div class="sb-onboard__charge-cell">
                                             <span class="sb-onboard__charge-name">CPU hours</span>
-                                            <span class="sb-onboard__charge-sub">Text: 5.4</span>
+                                            <span class="sb-onboard__charge-sub">Tier: S-4</span>
                                         </div>
                                     </td>
                                     <td>500</td>
-                                    <td>—</td>
-                                    <td class="sb-onboard__td-end">$0.00</td>
+                                    <td>$6.00</td>
+                                    <td class="sb-onboard__td-end">$3,000.00</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -365,12 +358,12 @@
                         <span class="sb-onboard__subtotals-label">Subtotals</span>
                         <div class="sb-onboard__subtotals-row">
                             <span>USD</span>
-                            <span>$31.00</span>
+                            <span>$6,531.00</span>
                         </div>
                     </div>
                     <div class="sb-onboard__total">
                         <span>Total due</span>
-                        <span class="sb-onboard__total-amount">$31.00 USD</span>
+                        <span class="sb-onboard__total-amount">$6,531.00 USD</span>
                     </div>
                 </aside>
             </div>
@@ -380,15 +373,15 @@
                 <p class="sb-onboard__steps" aria-label="Setup steps">
                     <span class="sb-onboard__step">1. Subscriptions</span>
                     <span class="sb-onboard__steps-sep" aria-hidden="true"></span>
-                    <span class="sb-onboard__step sb-onboard__step--current">2. Usage</span>
+                    <span class="sb-onboard__step">2. Usage</span>
                     <span class="sb-onboard__steps-sep" aria-hidden="true"></span>
                     <span class="sb-onboard__step">3. Prices</span>
                     <span class="sb-onboard__steps-sep" aria-hidden="true"></span>
-                    <span class="sb-onboard__step">4. Next steps</span>
+                    <span class="sb-onboard__step sb-onboard__step--current">4. Next steps</span>
                 </p>
                 <div class="sb-onboard__footer-actions">
-                    <a href="sandbox.html" class="sb-onboard__btn sb-onboard__btn--outline">Back</a>
-                    <a href="prices.html" class="sb-onboard__btn sb-onboard__btn--primary">Next</a>
+                    <a href="prices.html" class="sb-onboard__btn sb-onboard__btn--outline">Back</a>
+                    <a href="invoice_created.html" class="sb-onboard__btn sb-onboard__btn--apply">Apply settings</a>
                 </div>
             </footer>
         </div>

@@ -217,91 +217,194 @@
     <h4 class="other-pages-headings">Configure your first invoice</h4>
             <div class="sb-onboard__body">
                 <main class="sb-onboard__main" id="sb-onboard-main">
-                    <div class="sb-usage-step">
-                        <h2 class="sb-usage-step__title">Define your usage line items</h2>
-                        <p class="sb-usage-step__lead">
-                            Usage line items are variable fees based on usage events sent from your product to Telgoo5.
-                            <a href="#" class="sb-usage-step__learn">Learn more about the full power of usage in Telgoo5
+                    <div class="sb-prices-step">
+                        <h2 class="sb-prices-step__title">Set your prices</h2>
+                        <p class="sb-prices-step__lead">
+                            These are your base prices. They can be overridden when they are applied to a contract.
+                            <a href="#" class="sb-usage-step__learn">Learn more about the full power of Rate Cards in Telgoo5
                                 <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
                         </p>
 
-                        <div class="sb-usage-card">
-                            <div class="sb-usage-card__head">
-                                <span class="sb-usage-card__title">CPU hours</span>
-                                <button type="button" class="sb-usage-card__delete" aria-label="Remove usage line item">
-                                    <i class="fas fa-trash-alt" aria-hidden="true"></i>
-                                </button>
-                            </div>
-                            <div class="sb-usage-card__grid">
-                                <div class="sb-usage-field">
-                                    <label for="sb-usage-name">Name</label>
-                                    <input id="sb-usage-name" type="text" value="CPU hours" autocomplete="off">
-                                </div>
-                                <div class="sb-usage-field">
-                                    <label for="sb-usage-event">Event type <span class="sb-usage-field__hint-icon" title="Event identifier sent by your app"><i class="fas fa-info-circle" aria-hidden="true"></i></span></label>
-                                    <input id="sb-usage-event" type="text" value="compute.usage" autocomplete="off">
-                                </div>
-                                <div class="sb-usage-field">
-                                    <label for="sb-usage-quantity-by">Quantity calculated by</label>
-                                    <div class="sb-usage-select-wrap">
-                                        <select id="sb-usage-quantity-by" aria-describedby="sb-usage-quantity-help">
-                                            <option value="sum" selected>sum</option>
-                                            <option value="max">max</option>
-                                            <option value="last">last</option>
-                                        </select>
-                                    </div>
-                                    <p id="sb-usage-quantity-help" class="sb-usage-field__help">Sum the values of all matching events</p>
-                                </div>
-                                <div class="sb-usage-field">
-                                    <label for="sb-usage-field-sum">Field to sum on</label>
-                                    <input id="sb-usage-field-sum" type="text" value="cpu.seconds" autocomplete="off">
+                        <div class="sb-prices-toolbar">
+                            <div class="sb-prices-toolbar__field">
+                                <label for="sb-prices-currency">Currency</label>
+                                <div class="sb-usage-select-wrap sb-prices-select--narrow">
+                                    <select id="sb-prices-currency">
+                                        <option value="usd" selected>USD</option>
+                                        <option value="eur">EUR</option>
+                                        <option value="gbp">GBP</option>
+                                    </select>
                                 </div>
                             </div>
-
-                            <div class="sb-usage-toggle-block">
-                                <label class="sb-usage-toggle">
-                                    <input type="checkbox" class="sb-usage-toggle__input" checked>
-                                    <span class="sb-usage-toggle__track" aria-hidden="true"><span class="sb-usage-toggle__knob"></span></span>
-                                    <span class="sb-usage-toggle__label"><b>Price differently by usage attributes</b> (e.g. llm_model, hardware_tier, region)</span>
-                                </label>
-
-                                <div class="sb-usage-attrs">
-                                    <div class="sb-usage-attrs__grid sb-usage-attrs__grid--head">
-                                        <span>Attribute</span>
-                                        <span>Possible values</span>
-                                    </div>
-                                    <div class="sb-usage-attrs__grid">
-                                        <div class="sb-usage-attrs__cell">
-                                            <input type="text" value="Text" aria-label="Attribute name" placeholder="e.g. llm_model">
-                                            <span class="sb-usage-field__help">e.g. llm_model</span>
-                                        </div>
-                                        <div class="sb-usage-attrs__cell">
-                                            <div class="sb-usage-tags" aria-label="Possible values">
-                                                <span class="sb-usage-tag">Claude <button type="button" class="sb-usage-tag__remove" aria-label="Remove Claude">&times;</button></span>
-                                                <span class="sb-usage-tag">5.4 <button type="button" class="sb-usage-tag__remove" aria-label="Remove 5.4">&times;</button></span>
-                                                <input type="text" class="sb-usage-tags__input" placeholder="Add value…" aria-label="Add possible value">
-                                            </div>
-                                            <span class="sb-usage-field__help">e.g. gpt-4, gpt-3-mini, gpt-3-turbo</span>
-                                        </div>
-                                    </div>
-                                    <div class="sb-usage-attrs__grid sb-usage-attrs__grid--add">
-                                        <div class="sb-usage-attrs__cell">
-                                            <input type="text" aria-label="Additional attribute name" placeholder="">
-                                        </div>
-                                        <div class="sb-usage-attrs__cell">
-                                            <input type="text" aria-label="Additional possible values" placeholder="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <button type="button" class="sb-onboard__btn sb-onboard__btn--outline sb-prices-toolbar__cta">Create custom pricing unit</button>
                         </div>
 
-                        <div class="sb-usage-step__footer-actions">
-                            <button type="button" class="sb-onboard__btn sb-onboard__btn--outline sb-usage-add-btn">
-                                <span aria-hidden="true">+ </span>Add usage line item
-                            </button>
-                            <button type="button" class="sb-usage-catalog-link">Show usage template catalog</button>
-                        </div>
+                        <section class="sb-price-section" aria-labelledby="sb-price-subscription-heading">
+                            <h3 id="sb-price-subscription-heading" class="sb-price-section__title">Subscription products</h3>
+                            <div class="sb-price-table-wrap">
+                                <table class="sb-price-table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" style="width: 30%;">Name</th>
+                                            <th scope="col" style="width: 25%;">Unit price</th>
+                                            <th scope="col" style="width: 20%;">Default on</th>
+                                            <th scope="col" style="width: 25%;">Included usage</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="sb-price-table__name">Standard Seats</td>
+                                            <td>
+                                                <div class="sb-price-money">
+                                                    <span class="sb-price-money__prefix" aria-hidden="true">$</span>
+                                                    <input id="sb-price-sub-std-unit" type="text" inputmode="decimal" value="1" aria-label="Standard Seats unit price">
+                                                    <select class="sb-price-money__cur" aria-label="Standard Seats unit currency">
+                                                        <option selected>USD</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                            <td class="sb-price-table__toggle">
+                                                <label class="sb-price-cell-toggle">
+                                                    <input type="checkbox" class="sb-usage-toggle__input" checked>
+                                                    <span class="sb-usage-toggle__track" aria-hidden="true"><span class="sb-usage-toggle__knob"></span></span>
+                                                    <span class="sb-sr-only">Default on for Standard Seats</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <div class="sb-price-money">
+                                                    <span class="sb-price-money__prefix" aria-hidden="true">$</span>
+                                                    <input id="sb-price-sub-std-inc" type="text" inputmode="decimal" value="0" aria-label="Standard Seats included usage">
+                                                    <select class="sb-price-money__cur" aria-label="Standard Seats included currency">
+                                                        <option selected>USD</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sb-price-table__name">Pro Seats</td>
+                                            <td>
+                                                <div class="sb-price-money">
+                                                    <span class="sb-price-money__prefix" aria-hidden="true">$</span>
+                                                    <input id="sb-price-sub-pro-unit" type="text" inputmode="decimal" value="1" aria-label="Pro Seats unit price">
+                                                    <select class="sb-price-money__cur" aria-label="Pro Seats unit currency">
+                                                        <option selected>USD</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                            <td class="sb-price-table__toggle">
+                                                <label class="sb-price-cell-toggle">
+                                                    <input type="checkbox" class="sb-usage-toggle__input" checked>
+                                                    <span class="sb-usage-toggle__track" aria-hidden="true"><span class="sb-usage-toggle__knob"></span></span>
+                                                    <span class="sb-sr-only">Default on for Pro Seats</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <div class="sb-price-money">
+                                                    <span class="sb-price-money__prefix" aria-hidden="true">$</span>
+                                                    <input id="sb-price-sub-pro-inc" type="text" inputmode="decimal" value="0" aria-label="Pro Seats included usage">
+                                                    <select class="sb-price-money__cur" aria-label="Pro Seats included currency">
+                                                        <option selected>USD</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sb-price-table__name">Premium tier</td>
+                                            <td>
+                                                <div class="sb-price-money">
+                                                    <span class="sb-price-money__prefix" aria-hidden="true">$</span>
+                                                    <input id="sb-price-sub-prem-unit" type="text" inputmode="decimal" value="1" aria-label="Premium tier unit price">
+                                                    <select class="sb-price-money__cur" aria-label="Premium tier unit currency">
+                                                        <option selected>USD</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                            <td class="sb-price-table__toggle">
+                                                <label class="sb-price-cell-toggle">
+                                                    <input type="checkbox" class="sb-usage-toggle__input" checked>
+                                                    <span class="sb-usage-toggle__track" aria-hidden="true"><span class="sb-usage-toggle__knob"></span></span>
+                                                    <span class="sb-sr-only">Default on for Premium tier</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <div class="sb-price-money">
+                                                    <span class="sb-price-money__prefix" aria-hidden="true">$</span>
+                                                    <input id="sb-price-sub-prem-inc" type="text" inputmode="decimal" value="0" aria-label="Premium tier included usage">
+                                                    <select class="sb-price-money__cur" aria-label="Premium tier included currency">
+                                                        <option selected>USD</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+
+                        <section class="sb-price-section" aria-labelledby="sb-price-usage-heading">
+                            <h3 id="sb-price-usage-heading" class="sb-price-section__title">Usage products</h3>
+                            <div class="sb-price-table-wrap">
+                                <table class="sb-price-table sb-price-table--usage">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" style="width: 30%;">Name</th>
+                                            <th scope="col" style="width: 25%;">Unit price</th>
+                                            <th scope="col" style="width: 45%;">Default on</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="sb-price-table__name">
+                                                <div class="sb-onboard__charge-cell">
+                                                    <span class="sb-onboard__charge-name">CPU hours</span>
+                                                    <span class="sb-onboard__charge-sub">Test: Claude</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="sb-price-money">
+                                                    <span class="sb-price-money__prefix" aria-hidden="true">$</span>
+                                                    <input id="sb-price-use-claude" type="text" inputmode="decimal" value="7" aria-label="CPU hours Claude unit price">
+                                                    <select class="sb-price-money__cur" aria-label="CPU hours Claude currency">
+                                                        <option selected>USD</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                            <td class="sb-price-table__toggle">
+                                                <label class="sb-price-cell-toggle">
+                                                    <input type="checkbox" class="sb-usage-toggle__input" checked>
+                                                    <span class="sb-usage-toggle__track" aria-hidden="true"><span class="sb-usage-toggle__knob"></span></span>
+                                                    <span class="sb-sr-only">Default on for CPU hours Claude</span>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sb-price-table__name">
+                                                <div class="sb-onboard__charge-cell">
+                                                    <span class="sb-onboard__charge-name">CPU hours</span>
+                                                    <span class="sb-onboard__charge-sub">Test: 5.4</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="sb-price-money">
+                                                    <span class="sb-price-money__prefix" aria-hidden="true">$</span>
+                                                    <input id="sb-price-use-54" type="text" inputmode="decimal" value="6" aria-label="CPU hours 5.4 unit price">
+                                                    <select class="sb-price-money__cur" aria-label="CPU hours 5.4 currency">
+                                                        <option selected>USD</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                            <td class="sb-price-table__toggle">
+                                                <label class="sb-price-cell-toggle">
+                                                    <input type="checkbox" class="sb-usage-toggle__input" checked>
+                                                    <span class="sb-usage-toggle__track" aria-hidden="true"><span class="sb-usage-toggle__knob"></span></span>
+                                                    <span class="sb-sr-only">Default on for CPU hours 5.4</span>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
                     </div>
                 </main>
 
@@ -340,23 +443,23 @@
                                     <td>
                                         <div class="sb-onboard__charge-cell">
                                             <span class="sb-onboard__charge-name">CPU hours</span>
-                                            <span class="sb-onboard__charge-sub">Text: Claude</span>
+                                            <span class="sb-onboard__charge-sub">Test: Claude</span>
                                         </div>
                                     </td>
                                     <td>500</td>
-                                    <td>—</td>
-                                    <td class="sb-onboard__td-end">$0.00</td>
+                                    <td>$7.00</td>
+                                    <td class="sb-onboard__td-end">$3,500.00</td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <div class="sb-onboard__charge-cell">
                                             <span class="sb-onboard__charge-name">CPU hours</span>
-                                            <span class="sb-onboard__charge-sub">Text: 5.4</span>
+                                            <span class="sb-onboard__charge-sub">Test: 5.4</span>
                                         </div>
                                     </td>
                                     <td>500</td>
-                                    <td>—</td>
-                                    <td class="sb-onboard__td-end">$0.00</td>
+                                    <td>$6.00</td>
+                                    <td class="sb-onboard__td-end">$3,000.00</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -365,12 +468,12 @@
                         <span class="sb-onboard__subtotals-label">Subtotals</span>
                         <div class="sb-onboard__subtotals-row">
                             <span>USD</span>
-                            <span>$31.00</span>
+                            <span>$6,531.00</span>
                         </div>
                     </div>
                     <div class="sb-onboard__total">
                         <span>Total due</span>
-                        <span class="sb-onboard__total-amount">$31.00 USD</span>
+                        <span class="sb-onboard__total-amount">$6,531.00 USD</span>
                     </div>
                 </aside>
             </div>
@@ -380,15 +483,16 @@
                 <p class="sb-onboard__steps" aria-label="Setup steps">
                     <span class="sb-onboard__step">1. Subscriptions</span>
                     <span class="sb-onboard__steps-sep" aria-hidden="true"></span>
-                    <span class="sb-onboard__step sb-onboard__step--current">2. Usage</span>
+                    <span class="sb-onboard__step">2. Usage</span>
                     <span class="sb-onboard__steps-sep" aria-hidden="true"></span>
-                    <span class="sb-onboard__step">3. Prices</span>
+                    <span class="sb-onboard__step sb-onboard__step--current">3. Prices</span>
                     <span class="sb-onboard__steps-sep" aria-hidden="true"></span>
                     <span class="sb-onboard__step">4. Next steps</span>
                 </p>
+
                 <div class="sb-onboard__footer-actions">
-                    <a href="sandbox.html" class="sb-onboard__btn sb-onboard__btn--outline">Back</a>
-                    <a href="prices.html" class="sb-onboard__btn sb-onboard__btn--primary">Next</a>
+                    <a href="usage.html" class="sb-onboard__btn sb-onboard__btn--outline">Back</a>
+                    <a href="#" class="sb-onboard__btn sb-onboard__btn--primary">Next</a>
                 </div>
             </footer>
         </div>
