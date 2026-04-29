@@ -3969,7 +3969,6 @@
 	position:relative;
 	font-weight:500;
 	color:var(--black-color);
-	text-transform:uppercase;
 	font-size:var(--font-16);
 	text-decoration:underline;
 	margin-left:var(--margin-left-30);
