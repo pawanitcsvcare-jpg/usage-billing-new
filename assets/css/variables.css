@@ -1,0 +1,12 @@
+:root {
+  --gradient1: #ff0f3a;
+  --gradient2: #ff1376;
+  --gradient3: #fd654e;
+  --gradient4: #f28b28;
+  --color-seventynine: #1434a8;
+  --color-eighty: #2a58fe;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}

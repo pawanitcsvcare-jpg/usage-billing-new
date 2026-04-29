@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 420" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="mih-surface" x1="24" y1="24" x2="496" y2="396">
+      <stop offset="0%" stop-color="#f0f9ff"/>
+      <stop offset="45%" stop-color="#eef2ff"/>
+      <stop offset="100%" stop-color="#ecfdf5"/>
+    </linearGradient>
+    <linearGradient id="mih-flow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#14b8a6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="mih-core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="mih-bar" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#4338ca"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <radialGradient id="mih-glow" cx="50%" cy="42%" r="55%">
+      <stop offset="0%" stop-color="#c4b5fd" stop-opacity="0.45"/>
+      <stop offset="70%" stop-color="#a5f3fc" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="mih-soft" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="14" stdDeviation="20" flood-color="#4338ca" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="520" height="420" rx="28" fill="url(#mih-surface)" stroke="#e0e7ff" stroke-width="1.5"/>
+
+  <!-- ambient glow -->
+  <ellipse cx="260" cy="200" rx="200" ry="160" fill="url(#mih-glow)"/>
+
+  <!-- live pulse rings -->
+  <g opacity="0.55">
+    <ellipse cx="260" cy="210" rx="118" ry="92" stroke="#818cf8" stroke-width="1.5" fill="none">
+      <animate attributeName="opacity" values="0.35;0.75;0.35" dur="4s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="260" cy="210" rx="148" ry="118" stroke="#67e8f9" stroke-width="1" fill="none">
+      <animate attributeName="opacity" values="0.2;0.55;0.2" dur="3.2s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- inbound usage streams -->
+  <path class="mih-stream mih-stream-a" d="M48 240 Q120 200 188 218" stroke="url(#mih-flow)" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.9"/>
+  <path class="mih-stream mih-stream-b" d="M52 320 Q140 280 200 268" stroke="url(#mih-flow)" stroke-width="2.6" stroke-linecap="round" fill="none" opacity="0.75"/>
+  <circle cx="48" cy="240" r="8" fill="#6366f1">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="52" cy="320" r="6" fill="#14b8a6">
+    <animate attributeName="opacity" values="0.45;1;0.45" dur="2.4s" begin="0.3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- central monetization core -->
+  <g filter="url(#mih-soft)" transform="translate(260,208)">
+    <rect x="-72" y="-56" width="144" height="112" rx="20" fill="#fff" stroke="#c7d2fe" stroke-width="1.4"/>
+    <rect x="-64" y="-44" width="128" height="36" rx="10" fill="url(#mih-core)" opacity="0.92"/>
+    <text x="0" y="-20" text-anchor="middle" fill="#fff" font-family="system-ui,Segoe UI,sans-serif" font-size="13" font-weight="700">REAL-TIME CORE</text>
+    <g transform="translate(0,14)">
+      <rect x="-52" y="-8" width="24" height="40" rx="4" fill="url(#mih-bar)" opacity="0.9"/>
+      <rect x="-22" y="-18" width="24" height="50" rx="4" fill="url(#mih-bar)"/>
+      <rect x="8" y="-4" width="24" height="36" rx="4" fill="url(#mih-bar)" opacity="0.85"/>
+      <rect x="38" y="-22" width="24" height="54" rx="4" fill="#059669" opacity="0.95"/>
+    </g>
+    <!-- flowing dot -->
+    <circle r="5" fill="#f97316">
+      <animateMotion dur="3.8s" repeatCount="indefinite" path="M -44 10 Q 0 -28 44 10"/>
+    </circle>
+  </g>
+
+  <!-- outbound value / finance -->
+  <path class="mih-stream mih-stream-c" d="M332 218 Q400 190 472 168" stroke="url(#mih-flow)" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.88"/>
+  <path d="M412 108 L452 108 L452 148 L412 148 Z" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <path d="M418 118 h28 M418 128 h20 M418 138 h24" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+  <rect x="412" y="156" width="40" height="8" rx="3" fill="#e2e8f0"/>
+  <rect x="412" y="156" width="26" height="8" rx="3" fill="url(#mih-core)" opacity="0.85">
+    <animate attributeName="width" values="18;34;22;30;18" dur="4s" repeatCount="indefinite"/>
+  </rect>
+  <text x="432" y="186" text-anchor="middle" fill="#475569" font-size="9" font-family="system-ui,sans-serif" font-weight="600">REVENUE SIGNAL</text>
+
+  <!-- meter gauge left -->
+  <g transform="translate(118,118)">
+    <path d="M -40 20 A 44 44 0 1 1 40 20" stroke="#e2e8f0" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M -40 20 A 44 44 0 1 1 24 -28" stroke="url(#mih-flow)" stroke-width="10" fill="none" stroke-linecap="round" opacity="0.95">
+      <animate attributeName="opacity" values="0.75;1;0.75" dur="2.8s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="0" cy="16" r="6" fill="#4338ca"/>
+  </g>
+
+  <!-- labels -->
+  <text x="118" y="96" text-anchor="middle" fill="#64748b" font-size="10" font-family="system-ui,sans-serif" font-weight="700" letter-spacing="0.12em">USAGE</text>
+  <text x="404" y="96" text-anchor="middle" fill="#64748b" font-size="10" font-family="system-ui,sans-serif" font-weight="700" letter-spacing="0.12em">FINANCE</text>
+  <text x="260" y="52" text-anchor="middle" fill="#4338ca" font-size="11" font-family="system-ui,sans-serif" font-weight="800" letter-spacing="0.28em">MONETIZATION INFRASTRUCTURE</text>
+</svg>

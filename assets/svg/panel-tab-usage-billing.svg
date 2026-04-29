@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 360" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="pt-ub-grad" x1="0" y1="0" x2="560" y2="360">
+      <stop offset="0%" stop-color="#f0f9ff"/>
+      <stop offset="100%" stop-color="#eef2ff"/>
+    </linearGradient>
+    <linearGradient id="pt-ub-bar" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="pt-ub-flow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
+    </linearGradient>
+    <linearGradient id="pt-ub-title-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#4f46e5">
+        <animate attributeName="stop-color" values="#4f46e5;#22d3ee;#14b8a6;#4f46e5" dur="5s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <filter id="pt-ub-sh"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#4338ca" flood-opacity="0.15"/></filter>
+  </defs>
+  <rect width="560" height="360" rx="20" fill="url(#pt-ub-grad)"/>
+  <!-- Heading aligned with tab: Complete Usage-Based Billing -->
+  <g opacity="1">
+    <animate attributeName="opacity" values="0.92;1;0.92" dur="3s" repeatCount="indefinite"/>
+    <text x="280" y="30" text-anchor="middle" fill="#312e81" font-size="13" font-family="system-ui,sans-serif" font-weight="800" letter-spacing="0.06em">COMPLETE USAGE-BASED</text>
+    <text x="280" y="48" text-anchor="middle" fill="#4338ca" font-size="13" font-family="system-ui,sans-serif" font-weight="800" letter-spacing="0.14em">BILLING</text>
+  </g>
+  <rect x="175" y="54" width="0" height="3" rx="1.5" fill="url(#pt-ub-title-line)">
+    <animate attributeName="width" values="0;210;210;0" keyTimes="0;0.35;0.7;1" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="x" values="280;175;175;280" keyTimes="0;0.35;0.7;1" dur="4s" repeatCount="indefinite"/>
+  </rect>
+  <text x="280" y="72" text-anchor="middle" fill="#64748b" font-size="9" font-family="system-ui,sans-serif" font-weight="600" letter-spacing="0.12em">METER · RATE · RECOGNIZE REVENUE</text>
+
+  <rect x="48" y="84" width="464" height="242" rx="16" fill="#fff" fill-opacity="0.85" stroke="#c7d2fe" stroke-width="1.2" filter="url(#pt-ub-sh)"/>
+  <g transform="translate(72,196) scale(1,-1)">
+    <rect x="0" y="0" width="36" height="52" rx="5" fill="url(#pt-ub-bar)" opacity="0.9"><animate attributeName="height" values="40;88;52;76;40" dur="3.2s" repeatCount="indefinite"/></rect>
+    <rect x="52" y="0" width="36" height="68" rx="5" fill="url(#pt-ub-bar)"><animate attributeName="height" values="52;96;60;92;52" dur="3.5s" begin="0.15s" repeatCount="indefinite"/></rect>
+    <rect x="104" y="0" width="36" height="76" rx="5" fill="url(#pt-ub-bar)" opacity="0.92"><animate attributeName="height" values="58;108;68;100;58" dur="2.9s" begin="0.3s" repeatCount="indefinite"/></rect>
+    <rect x="156" y="0" width="36" height="60" rx="5" fill="url(#pt-ub-bar)" opacity="0.88"><animate attributeName="height" values="44;94;54;88;44" dur="3.4s" begin="0.08s" repeatCount="indefinite"/></rect>
+    <rect x="208" y="0" width="36" height="72" rx="5" fill="url(#pt-ub-bar)"><animate attributeName="height" values="50;102;62;96;50" dur="3.6s" begin="0.22s" repeatCount="indefinite"/></rect>
+    <rect x="260" y="0" width="36" height="64" rx="5" fill="#059669"><animate attributeName="height" values="46;98;56;92;46" dur="3.1s" begin="0.4s" repeatCount="indefinite"/></rect>
+  </g>
+  <path d="M88 164 C 180 104 280 216 380 136 S 480 116 472 216" stroke="url(#pt-ub-flow)" stroke-width="3.5" fill="none" stroke-linecap="round" opacity="0.9"/>
+  <circle r="6" fill="#f97316"><animateMotion dur="4.5s" repeatCount="indefinite" path="M88 164 C 180 104 280 216 380 136 S 480 116 472 216"/></circle>
+  <g transform="translate(380,262)">
+    <rect x="0" y="0" width="120" height="36" rx="10" fill="#4f46e5"/>
+    <text x="60" y="24" text-anchor="middle" fill="#fff" font-size="11" font-family="system-ui,sans-serif" font-weight="700">Invoice sync</text>
+  </g>
+  <rect x="72" y="104" width="200" height="10" rx="3" fill="#e0e7ff"/>
+  <rect x="72" y="122" width="160" height="8" rx="2" fill="#e2e8f0" opacity="0.9"/>
+</svg>

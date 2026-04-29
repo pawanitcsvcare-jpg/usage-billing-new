@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 400" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="ubb-scene-sky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="40%" stop-color="#e0e7ff"/>
+      <stop offset="100%" stop-color="#ccfbf1"/>
+    </linearGradient>
+    <linearGradient id="ubb-bar-fill" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#3730a3"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="ubb-bar-accent" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="ubb-line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="45%" stop-color="#14b8a6"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <linearGradient id="ubb-rev-strip" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5b21b6"/>
+      <stop offset="100%" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <pattern id="ubb-grid-light" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M0 15.5h16M15.5 0v16" stroke="#64748b" stroke-width="0.5" opacity="0.18"/>
+    </pattern>
+  </defs>
+  <g opacity="0.85">
+    <path fill="url(#ubb-scene-sky)" d="M8 52 L452 28 L460 312 L12 388 Z"/>
+    <path fill="url(#ubb-grid-light)" d="M-24 120 L520 90 L520 360 L-40 400 Z" transform="rotate(-6 230 240)" opacity="0.55"/>
+  </g>
+  <path stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="5 12" d="M36 44 H424" opacity="0.45"/>
+  <text x="230" y="34" text-anchor="middle" fill="#475569" font-size="10" font-family="system-ui,sans-serif" font-weight="700" letter-spacing="0.26em">METER &#183; RATE &#183; INVOICE &#183; RECOGNIZE</text>
+  <path class="hero-ubb-pipeline" d="M32 68 C150 36 290 104 428 70" stroke="url(#ubb-line-grad)" stroke-width="2.8" stroke-linecap="round" fill="none" opacity="0.85"/>
+  <g transform="translate(48,88)">
+    <rect width="364" height="210" rx="18" fill="#fff" fill-opacity="0.78" stroke="rgba(67,56,202,0.22)" stroke-width="1.2"/>
+    <path fill="#eef2ff" d="M18 44 h328 v52 H18 Z" opacity="0.65"/>
+    <text x="22" y="30" fill="#1e293b" font-size="13" font-family="system-ui,sans-serif" font-weight="700">Live usage curve</text>
+    <text x="22" y="46" fill="#64748b" font-size="10" font-family="system-ui,sans-serif">Events aggregated &#8594; priced tiers &#8594; revenue-ready</text>
+    <g transform="translate(26,182) scale(1,-1)">
+      <rect x="0" y="0" width="28" height="42" rx="4" fill="url(#ubb-bar-fill)" opacity="0.88">
+        <animate attributeName="height" values="34;96;58;90;34" keyTimes="0;0.25;0.5;0.75;1" dur="3.6s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="48" y="0" width="28" height="56" rx="4" fill="url(#ubb-bar-fill)">
+        <animate attributeName="height" values="46;108;64;100;46" keyTimes="0;0.25;0.5;0.75;1" dur="3.9s" begin="0.15s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="96" y="0" width="28" height="68" rx="4" fill="url(#ubb-bar-fill)" opacity="0.93">
+        <animate attributeName="height" values="54;118;72;112;54" keyTimes="0;0.25;0.5;0.75;1" dur="3.3s" begin="0.35s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="144" y="0" width="28" height="50" rx="4" fill="url(#ubb-bar-fill)" opacity="0.88">
+        <animate attributeName="height" values="40;102;52;96;40" keyTimes="0;0.25;0.5;0.75;1" dur="3.7s" begin="0.08s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="192" y="0" width="28" height="64" rx="4" fill="url(#ubb-bar-fill)">
+        <animate attributeName="height" values="48;114;66;108;48" keyTimes="0;0.25;0.5;0.75;1" dur="4.1s" begin="0.28s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="240" y="0" width="28" height="54" rx="4" fill="url(#ubb-bar-accent)">
+        <animate attributeName="height" values="44;122;58;116;44" keyTimes="0;0.25;0.5;0.75;1" dur="3.5s" begin="0.5s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    <path class="hero-ubb-line" d="M 54 132 C 118 78 176 158 236 96 S 348 58 416 108" stroke="url(#ubb-line-grad)" stroke-width="3.2" stroke-linecap="round" fill="none" stroke-linejoin="round"/>
+    <polygon fill="#0f766e" points="0,-7 6,-3 6,4 0,8 -6,4 -6,-3">
+      <animateMotion dur="5s" repeatCount="indefinite" path="M 54 132 C 118 78 176 158 236 96 S 348 58 416 108"/>
+    </polygon>
+  </g>
+  <g transform="translate(62,308)">
+    <rect width="336" height="72" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="18" y="26" fill="#334155" font-size="11" font-family="system-ui,sans-serif" font-weight="700">Revenue recognized &#183; ARR runway</text>
+    <rect x="18" y="38" width="300" height="14" rx="7" fill="#e2e8f0"/>
+    <rect class="hero-ubb-rev-fill" x="18" y="38" width="104" height="14" rx="7" fill="url(#ubb-rev-strip)">
+      <animate attributeName="width" values="88;248;140;220;88" keyTimes="0;0.25;0.5;0.75;1" dur="4.8s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <g transform="translate(72,258)" opacity="0.95">
+    <rect x="0" y="0" width="316" height="40" rx="10" fill="#0f172a" fill-opacity="0.05"/>
+    <rect class="hero-ubb-invoice" x="4" y="5" width="96" height="30" rx="8" fill="#4338ca"/>
+    <text x="52" y="25" text-anchor="middle" fill="#fff" font-size="10" font-family="system-ui,sans-serif" font-weight="600">Invoice ready</text>
+    <path d="M 118 22 h26 M 154 22 h40 M 206 22 h86" stroke="#64748b" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
+  </g>
+</svg>
