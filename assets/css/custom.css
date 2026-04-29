@@ -2414,6 +2414,7 @@ body.schedule-demo-modal-open {
 .login-page__submit:hover {
   transform: translateY(-1px);
   box-shadow: 0 18px 40px rgba(79, 70, 229, 0.42);
+  color: #fff;
 }
 
 .login-page__submit:active {
