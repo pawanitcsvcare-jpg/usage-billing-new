@@ -1611,6 +1611,8 @@ body.schedule-demo-modal-open {
   opacity: 0;
   transform: translateY(10px);
   animation: sd-success-reveal-text 0.55s cubic-bezier(0.22, 1, 0.36, 1) 0.48s both;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 .schedule-demo-sandbox-success__done-shine {

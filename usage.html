@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Telgoo5 - Usage Billing Platform</title>
+    <meta name="robots" content="max-image-preview:large">
+    <link rel="stylesheet" href="assets/css/bootstrap.css" media="all">
+    <link rel="stylesheet" href="assets/css/jquery.bootstrap-touchspin.css" media="all">
+    <link rel="stylesheet" href="assets/css/odometer-theme-default.css" media="all">
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css" media="all">
+    <link rel="stylesheet" href="assets/css/flaticon.css" media="all">
+    <link rel="stylesheet" href="assets/css/fontawesome.css" media="all">
+    <link rel="stylesheet" href="assets/css/icofont.css" media="all">
+    <link rel="stylesheet" href="assets/css/animate.css" media="all">
+    <link rel="stylesheet" href="assets/css/owl.css" media="all">
+    <link rel="stylesheet" href="assets/css/swiper.min.css" media="all">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" media="all">
+    <link rel="stylesheet" href="assets/css/meanmenu.min.css" media="all">
+    <link rel="stylesheet" id="custom-animate-css" href="assets/css/custom-animate.css" media="all">
+    <link rel="stylesheet" href="assets/css/global.css" media="all">
+    <link rel="stylesheet" href="assets/css/header.css" media="all">
+    <link rel="stylesheet" href="assets/css/footer.css" media="all">
+    <link rel="stylesheet" href="assets/css/post-style.css" media="all">
+    <link rel="stylesheet" href="assets/css/usage-billing-main.css" media="all">
+    <link rel="stylesheet" href="assets/css/responsive-2.css" media="all">
+    <link rel="stylesheet" href="assets/css/responsive.css" media="all">
+    <link rel="stylesheet" href="assets/css/usage-billing-theme.css" media="all">
+    <link rel="stylesheet" href="assets/css/theme-overrides.css" media="all">
+    <link rel="stylesheet" href="assets/css/variables.css" media="all">
+    <link rel="stylesheet" href="assets/css/custom.css" media="all">
+    <link rel="stylesheet" href="assets/css/sandbox-page.css" media="all">
+
+    <link rel="stylesheet" href="assets/css/elementor-icons.min.css" media="all">
+    <link rel="stylesheet" href="assets/css/elementor-frontend.min.css" media="all">
+    <link rel="stylesheet" href="assets/css/elementor-post-5.css" media="all">
+    <link rel="stylesheet" href="assets/css/elementor-post-428.css" media="all">
+    <script src="assets/js/jquery-1.12.4-wp.js" id="jquery-core-js"></script>
+    <script src="assets/js/jquery-migrate-1.4.1-wp.js" id="jquery-migrate-js"></script>
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body class="site theme-usage-billing elementor-page page-sandbox page-sandbox-onboarding" data-elementor-device-mode="desktop">
+    <div id="page" class="site page-wrapper">
+        <a class="sb-skip-link" href="#sb-onboard-main">Skip to content</a>
+        <!-- Main Header / Header Style Three -->
+        <header class="main-header header-style-three">
+            <div class="header-lower">
+                <div class="auto-container">
+                    <div class="inner-container d-flex justify-content-between align-items-center">
+                        <div class="logo-box">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="assets/images/logo.png" alt="Telgoo5">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="nav-outer d-flex align-items-center">
+                            <nav class="main-menu show navbar-expand-md">
+                                <div class="navbar-header">
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+                                    <ul id="usage-billing-primary-menu" class="navigation clearfix">
+                                        <li
+                                            class="menu-item dropdown mega-menu-parent menu-item-home current-menu-item page_item page-item-428 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-694 current">
+                                            <a href="index.html" aria-current="page">Products</a>
+                                            <ul class="dropdown mega-menu-dropdown">
+                                                <li class="mega-menu-shell">
+                                                    <div class="mega-menu" role="navigation" aria-label="Products">
+                                                        <div class="mega-menu__grid">
+                                                            <div class="mega-menu__col mega-menu__col--icons">
+                                                                <a class="mega-menu__item mega-menu__item--icon" href="#">
+                                                                    <span class="mega-menu__icon-wrap" aria-hidden="true"><i class="fas fa-file-invoice-dollar"></i></span>
+                                                                    <span class="mega-menu__body">
+                                                                        <span class="mega-menu__title">Billing for AI</span>
+                                                                        <span class="mega-menu__desc">Meter tokens and GPU usage; invoice API and inference cleanly.</span>
+                                                                    </span>
+                                                                </a>
+                                                                <a class="mega-menu__item mega-menu__item--icon" href="#">
+                                                                    <span class="mega-menu__icon-wrap" aria-hidden="true"><i class="fas fa-balance-scale"></i></span>
+                                                                    <span class="mega-menu__body">
+                                                                        <span class="mega-menu__title">Product Catalog</span>
+                                                                        <span class="mega-menu__desc">Define plans, add-ons, and bundles customers actually buy.</span>
+                                                                    </span>
+                                                                </a>
+                                                                <a class="mega-menu__item mega-menu__item--icon" href="#">
+                                                                    <span class="mega-menu__icon-wrap" aria-hidden="true"><i class="fas fa-hand-holding-usd"></i></span>
+                                                                    <span class="mega-menu__body">
+                                                                        <span class="mega-menu__title">Subscription Management</span>
+                                                                        <span class="mega-menu__desc">Lifecycle, renewals, co-terming, and changes without chaos.</span>
+                                                                    </span>
+                                                                </a>
+                                                                <a class="mega-menu__item mega-menu__item--icon" href="#">
+                                                                    <span class="mega-menu__icon-wrap" aria-hidden="true"><i class="fas fa-chart-pie"></i></span>
+                                                                    <span class="mega-menu__body">
+                                                                        <span class="mega-menu__title">Usage-based Pricing</span>
+                                                                        <span class="mega-menu__desc">Meters, tiers, and overages that map to how you sell.</span>
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="mega-menu__col mega-menu__col--plain">
+                                                                <a class="mega-menu__item" href="#">
+                                                                    <span class="mega-menu__body">
+                                                                        <span class="mega-menu__title">Entitlements</span>
+                                                                        <span class="mega-menu__desc">Grant seats, features, and credits from one rules layer.</span>
+                                                                    </span>
+                                                                </a>
+                                                                <a class="mega-menu__item" href="#">
+                                                                    <span class="mega-menu__body">
+                                                                        <span class="mega-menu__title">Payment Retries and Collections</span>
+                                                                        <span class="mega-menu__desc">Smart retries, dunning, and payment recovery out of the box.</span>
+                                                                    </span>
+                                                                </a>
+                                                                <a class="mega-menu__item" href="#">
+                                                                    <span class="mega-menu__body">
+                                                                        <span class="mega-menu__title">Trial & Self-serve</span>
+                                                                        <span class="mega-menu__desc">Trials, checkout, and upgrades with minimal sales touch.</span>
+                                                                    </span>
+                                                                </a>
+                                                                <a class="mega-menu__item" href="#">
+                                                                    <span class="mega-menu__body">
+                                                                        <span class="mega-menu__title">Reporting and Analytics</span>
+                                                                        <span class="mega-menu__desc">Revenue, usage, and cohort views your GTM team can trust.</span>
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <a class="mega-menu__integrations" href="#">
+                                                            <span class="mega-menu__integrations-label">100+ Integrations <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+                                                            <span class="mega-menu__integrations-logos" aria-hidden="true">
+                                                                <span class="mega-menu__logo-ring"><i class="fab fa-hubspot"></i></span>
+                                                                <span class="mega-menu__logo-ring"><i class="fab fa-google"></i></span>
+                                                                <span class="mega-menu__logo-ring"><i class="fab fa-microsoft"></i></span>
+                                                                <span class="mega-menu__logo-ring"><i class="fab fa-stripe"></i></span>
+                                                                <span class="mega-menu__logo-ring"><i class="fab fa-aws"></i></span>
+                                                                <span class="mega-menu__logo-ring"><i class="fab fa-slack"></i></span>
+                                                                <span class="mega-menu__logo-ring"><i class="fab fa-linkedin-in"></i></span>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>
+                                        </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1734">
+                                            <a href="#">Solutions</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1734">
+                                            <a href="#">Pricing</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1734">
+                                            <a href="#">Partners</a></li>
+                                        <li
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-428 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor dropdown menu-item-694 current">
+                                            <a href="#" aria-current="page">Resources</a>
+                                            <ul class="dropdown">
+                                                <li
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-428 current_page_item menu-item-1866">
+                                                    <a href="#" aria-current="page">Blog</a></li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1867">
+                                                    <a href="#">Guides</a></li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2188">
+                                                    <a href="#">Reference Architecture</a></li>
+                                            </ul>
+                                            <div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="outer-box d-flex align-items-center">
+                            <div class="login-box header-cta d-flex align-items-center flex-wrap gap-3">
+                                <a href="#" class="header-btn header-btn--demo js-schedule-demo-open" id="schedule-demo-trigger"
+                                    role="button" aria-haspopup="dialog" aria-controls="get-started-modal">
+                                    <span class="header-btn__shine" aria-hidden="true"></span>
+                                    <span class="header-btn__icon" aria-hidden="true"><i class="fas fa-calendar-check"></i></span>
+                                    <span class="header-btn__text">Schedule a Demo</span>
+                                </a>
+                                <a href="login.html" class="header-btn header-btn--login">
+                                    <span class="header-btn__icon" aria-hidden="true"><i class="fas fa-sign-in-alt"></i></span>
+                                    <span class="header-btn__text">Login</span>
+                                </a>
+                            </div>
+                            <div id="open_offcanvas" class="style-two">
+                                <div class="bars-outer clearfix">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End Main Header -->
+
+        <div class="clearfix"></div>
+
+        <div class="sb-onboard" role="application" aria-label="First invoice setup">
+            <div class="custom-sections_outer">         
+<div class="custom-sections">
+    <h4 class="other-pages-headings">Configure your first invoice</h4>
+            <div class="sb-onboard__body">
+                <main class="sb-onboard__main" id="sb-onboard-main">
+                   
+                    <div class="sb-onboard__welcome">
+                        <div class="sb-onboard__welcome-brand">
+                            <span class="sb-onboard__brand-mark" aria-hidden="true">T</span>
+                            <h2 class="sb-onboard__welcome-title">Welcome to Telgoo5!</h2>
+                        </div>
+                        <p class="sb-onboard__welcome-text">To reflect your product’s pricing in Telgoo5, we’ll start by creating your first
+                            invoice on a test customer. On the right, you’ll see how each setting impacts the invoice.</p>
+                        <button type="button" class="second-btns mb-5">Get started</button>
+
+                        <div class="sb-onboard__notice" role="note">
+                            <span class="sb-onboard__notice-icon" aria-hidden="true"><i class="fas fa-exclamation-triangle"></i></span>
+                            <p class="sb-onboard__notice-text"><strong>Note:</strong> You are in a limited sandbox. When you are ready
+                                for a free production account, contact <a href="mailto:sales@telgoo5.com">sales@telgoo5.com</a>.</p>
+                        </div>
+                    </div>
+                </main>
+
+                <aside class="sb-onboard__preview" aria-label="Invoice preview">
+                    <h3 class="sb-onboard__preview-title">Invoice preview based on your settings</h3>
+                    <div class="sb-onboard__table-wrap">
+                        <table class="sb-onboard__table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Charge</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Unit price</th>
+                                    <th scope="col" class="sb-onboard__th-end">Total due</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>CPU hours</td>
+                                    <td>1000</td>
+                                    <td>—</td>
+                                    <td class="sb-onboard__td-end">$0.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="sb-onboard__subtotals">
+                        <span class="sb-onboard__subtotals-label">Subtotals</span>
+                        <div class="sb-onboard__subtotals-row">
+                            <span>USD</span>
+                            <span>$0.00</span>
+                        </div>
+                    </div>
+                    <div class="sb-onboard__total">
+                        <span>Total due</span>
+                        <span class="sb-onboard__total-amount">$0.00 USD</span>
+                    </div>
+                </aside>
+            </div>
+            </div>
+            </div>
+            <footer class="sb-onboard__footer">
+                <p class="sb-onboard__steps" aria-label="Setup steps">
+                    <span>1. Subscriptions</span>
+                    <span class="sb-onboard__steps-sep" aria-hidden="true"></span>
+                    <span>2. Usage</span>
+                    <span class="sb-onboard__steps-sep" aria-hidden="true"></span>
+                    <span>3. Prices</span>
+                    <span class="sb-onboard__steps-sep" aria-hidden="true"></span>
+                    <span>4. Next steps</span>
+                </p>
+                <div class="sb-onboard__footer-actions">
+                    <button type="button" class="sb-onboard__btn sb-onboard__btn--outline">Skip and apply example settings</button>
+                    <button type="button" class="sb-onboard__btn sb-onboard__btn--primary">Get started</button>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Main Footer -->
+        <footer class="main-footer style-three footer-telgoo-dark">
+            <div class="auto-container">
+                <div class="widgets-section">
+                    <div class="row clearfix">
+                        <div class="big-column col-lg-3 col-md-12 col-sm-12">
+                            <div class="row clearfix">
+                                <div class="footer-column col-lg-12 col-md-12 col-sm-12">
+                                    <div class="footer-widget links-widget footer-telgoo__brand-widget">
+                                        <div class="logo footer-telgoo__logo">
+                                            <a href="index.html" class="footer-telgoo__logo-link">
+                                                <img class="footer-telgoo__logo-img" src="assets/images/logo.png"
+                                                    alt="Telgoo5" width="140" height="36">
+                                            </a>
+                                        </div>
+                                        <div class="footer-telgoo__contact-details text">
+                                            <p class="footer-telgoo__contact-row">
+                                                <span class="footer-telgoo__contact-icon" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></span>
+                                                <span>135 W 41st, 5th fl<br>New York, NY 10036</span>
+                                            </p>
+                                            <p class="footer-telgoo__contact-row">
+                                                <span class="footer-telgoo__contact-icon" aria-hidden="true"><i class="fas fa-phone"></i></span>
+                                                <a href="tel:+16469969297">+1 (646) 996-9297</a>
+                                            </p>
+                                            <div class="footer-telgoo__contact-mail">
+                                                <span class="footer-telgoo__contact-label">For inquiries:</span>
+                                                <p class="footer-telgoo__contact-row">
+                                                    <span class="footer-telgoo__contact-icon" aria-hidden="true"><i class="fas fa-envelope"></i></span>
+                                                    <a href="mailto:sales@telgoo5.com">sales@telgoo5.com</a>
+                                                </p>
+                                            </div>
+                                            <div class="footer-telgoo__contact-mail">
+                                                <span class="footer-telgoo__contact-label">For marketing:</span>
+                                                <p class="footer-telgoo__contact-row">
+                                                    <span class="footer-telgoo__contact-icon" aria-hidden="true"><i class="fas fa-envelope"></i></span>
+                                                    <a href="mailto:marketing@telgoo5.com">marketing@telgoo5.com</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="big-column col-lg-9 col-md-12 col-sm-12">
+                            <div class="row clearfix">
+                                <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                                    <div class="page-list">
+                                        <div id="nav_menu-footer-company" class="widget footer-widget links-widget">
+                                            <p class="footer-telgoo__kicker">Explore</p>
+                                            <h5>Company</h5>
+                                            <div class="menu-footer-company-container">
+                                                <ul class="menu">
+                                                    <li class="menu-item"><a href="#">Product</a></li>
+                                                    <li class="menu-item"><a href="#">About</a></li>
+                                                    <li class="menu-item"><a href="#">Customers</a></li>
+                                                    <li class="menu-item"><a href="#">Security</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                                    <div class="page-list">
+                                        <div id="nav_menu-footer-teams" class="widget footer-widget links-widget">
+                                            <p class="footer-telgoo__kicker">By role</p>
+                                            <h5>For Teams</h5>
+                                            <div class="menu-footer-teams-container">
+                                                <ul class="menu">
+                                                    <li class="menu-item"><a href="#">Finance &amp; Billing Operations</a></li>
+                                                    <li class="menu-item"><a href="#">Product</a></li>
+                                                    <li class="menu-item"><a href="#">Engineering</a></li>
+                                                    <li class="menu-item"><a href="#">Sales &amp; Customer Success</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                                    <div class="page-list">
+                                        <div id="nav_menu-footer-resources" class="widget footer-widget links-widget">
+                                            <p class="footer-telgoo__kicker">Learn</p>
+                                            <h5>Resources</h5>
+                                            <div class="menu-footer-resources-container">
+                                                <ul class="menu">
+                                                    <li class="menu-item"><a href="#">Docs</a></li>
+                                                    <li class="menu-item"><a href="#">Guides</a></li>
+                                                    <li class="menu-item"><a href="#">Webinars</a></li>
+                                                    <li class="menu-item"><a href="#">Pricing</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                                    <div class="page-list">
+                                        <div id="nav_menu-footer-notices" class="widget footer-widget links-widget">
+                                            <p class="footer-telgoo__kicker">Legal</p>
+                                            <h5>Notices</h5>
+                                            <div class="menu-footer-notices-container">
+                                                <ul class="menu">
+                                                    <li class="menu-item"><a href="#">Privacy Notice</a></li>
+                                                    <li class="menu-item"><a href="#">Website Notices</a></li>
+                                                    <li class="menu-item"><a href="#">Cookie Notice</a></li>
+                                                    <li class="menu-item"><a href="#">Anti-slavery and Human Trafficking Statement</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom footer-telgoo__footer-bottom">
+                    <div class="footer-telgoo__copyright-wrap">
+                        <p class="copyright footer-telgoo__copyright">
+                            © Copyright 2026. All Rights Reserved by Telgoo5.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Main Footer -->
+
+    </div><!-- #page -->
+
+    <!-- Get Started modal — right: Let's get started (email + company size + Continue) -->
+    <div id="get-started-modal" class="schedule-demo-modal" aria-hidden="true" role="dialog" aria-modal="true"
+        aria-labelledby="get-started-modal-title">
+        <div class="schedule-demo-modal__backdrop" data-demo-modal-close tabindex="-1"></div>
+        <div class="schedule-demo-modal__shell">
+            <div class="schedule-demo-modal__split">
+                <aside class="schedule-demo-modal__promo" aria-hidden="false">
+                    <div class="schedule-demo-modal__brand">
+                        <span class="schedule-demo-modal__brand-icon" aria-hidden="true">T</span>
+                        <div>
+                            <span class="schedule-demo-modal__brand-name">Telgoo5</span>
+                            <span class="schedule-demo-modal__brand-tag">Usage billing platform</span>
+                        </div>
+                    </div>
+                    <h2 class="schedule-demo-modal__promo-title">Get started with Telgoo5</h2>
+                    <ul class="schedule-demo-modal__features">
+                        <li>
+                            <span class="schedule-demo-modal__feat-icon" aria-hidden="true"><i class="fas fa-rocket"></i></span>
+                            <span>Ship usage-rated pricing in weeks, not quarters.</span>
+                        </li>
+                        <li>
+                            <span class="schedule-demo-modal__feat-icon" aria-hidden="true"><i class="fas fa-layer-group"></i></span>
+                            <span>Evaluate how Telgoo5 meets your needs — pricing, integrations, and scale.</span>
+                        </li>
+                        <li>
+                            <span class="schedule-demo-modal__feat-icon" aria-hidden="true"><i class="fas fa-chart-line"></i></span>
+                            <span>Monetize smarter with real-time usage visibility.</span>
+                        </li>
+                        <li>
+                            <span class="schedule-demo-modal__feat-icon" aria-hidden="true"><i class="fas fa-expand-arrows-alt"></i></span>
+                            <span>Iterate on pricing without ripping out your stack.</span>
+                        </li>
+                    </ul>
+                </aside>
+                <div class="schedule-demo-modal__form-panel schedule-demo-modal__form-panel--onboarding">
+                    <h3 id="get-started-modal-title" class="schedule-demo-modal__form-title">Let's get started</h3>
+                    <p class="schedule-demo-modal__form-lead">Please answer a few questions so we can personalize your demo.</p>
+                    <form class="schedule-demo-modal__form" id="get-started-form" action="#" method="post" novalidate>
+                        <div class="schedule-demo-modal__field schedule-demo-modal__field--flush">
+                            <label for="gs-work-email">Work email <abbr title="required">*</abbr></label>
+                            <input id="gs-work-email" name="work_email" type="email" autocomplete="email"
+                                placeholder="Work email" required>
+                        </div>
+                        <fieldset class="schedule-demo-modal__emp-fieldset">
+                            <legend class="schedule-demo-modal__emp-legend">How many employees are at your company?</legend>
+                            <div class="schedule-demo-modal__emp-grid" role="radiogroup" aria-label="Company size">
+                                <label class="schedule-demo-modal__emp-chip">
+                                    <input type="radio" name="gs_employees" value="1-10" required>
+                                    <span>1-10</span>
+                                </label>
+                                <label class="schedule-demo-modal__emp-chip">
+                                    <input type="radio" name="gs_employees" value="11-50">
+                                    <span>11-50</span>
+                                </label>
+                                <label class="schedule-demo-modal__emp-chip">
+                                    <input type="radio" name="gs_employees" value="51-250">
+                                    <span>51-250</span>
+                                </label>
+                                <label class="schedule-demo-modal__emp-chip">
+                                    <input type="radio" name="gs_employees" value="251-1000">
+                                    <span>251-1000</span>
+                                </label>
+                                <label class="schedule-demo-modal__emp-chip schedule-demo-modal__emp-chip--solo">
+                                    <input type="radio" name="gs_employees" value="1001+">
+                                    <span>1001+</span>
+                                </label>
+                            </div>
+                        </fieldset>
+                        <label class="schedule-demo-modal__consent schedule-demo-modal__consent--comms">
+                            <input type="checkbox" name="comms_ok" id="gs-comms-ok" checked>
+                            <span>By completing this form, I agree to receive communications from Telgoo5. I can unsubscribe at any
+                                time. For more information, please review our
+                                <a class="schedule-demo-modal__privacy-link" href="#">Privacy Policy</a>.</span>
+                        </label>
+                        <button type="submit" class="login-page__submit">Continue</button>
+                    </form>
+                </div>
+            </div>
+            <button type="button" class="schedule-demo-modal__close" aria-label="Close dialog" data-demo-modal-close>
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Schedule a Demo modal — right: Create your sandbox (full form + Request demo) -->
+    <div id="schedule-demo-modal" class="schedule-demo-modal" aria-hidden="true" role="dialog" aria-modal="true"
+        aria-labelledby="schedule-demo-sandbox-title">
+        <div class="schedule-demo-modal__backdrop" data-demo-modal-close tabindex="-1"></div>
+        <div class="schedule-demo-modal__shell">
+            <div class="schedule-demo-modal__split">
+                <aside class="schedule-demo-modal__promo" aria-hidden="false">
+                    <div class="schedule-demo-modal__brand">
+                        <span class="schedule-demo-modal__brand-icon" aria-hidden="true">T</span>
+                        <div>
+                            <span class="schedule-demo-modal__brand-name">Telgoo5</span>
+                            <span class="schedule-demo-modal__brand-tag">Usage billing platform</span>
+                        </div>
+                    </div>
+                    <h2 class="schedule-demo-modal__promo-title">Get started with Telgoo5</h2>
+                    <ul class="schedule-demo-modal__features">
+                        <li>
+                            <span class="schedule-demo-modal__feat-icon" aria-hidden="true"><i class="fas fa-rocket"></i></span>
+                            <span>Ship usage-rated pricing in weeks, not quarters.</span>
+                        </li>
+                        <li>
+                            <span class="schedule-demo-modal__feat-icon" aria-hidden="true"><i class="fas fa-layer-group"></i></span>
+                            <span>Evaluate how Telgoo5 meets your needs — pricing, integrations, and scale.</span>
+                        </li>
+                        <li>
+                            <span class="schedule-demo-modal__feat-icon" aria-hidden="true"><i class="fas fa-chart-line"></i></span>
+                            <span>Monetize smarter with real-time usage visibility.</span>
+                        </li>
+                        <li>
+                            <span class="schedule-demo-modal__feat-icon" aria-hidden="true"><i class="fas fa-expand-arrows-alt"></i></span>
+                            <span>Iterate on pricing without ripping out your stack.</span>
+                        </li>
+                    </ul>
+                </aside>
+                <div class="schedule-demo-modal__form-panel schedule-demo-modal__form-panel--sandbox">
+                    <div class="schedule-demo-modal__sandbox-views">
+                        <div class="schedule-demo-modal__sandbox-form-view" id="sd-form-view">
+                            <h3 id="schedule-demo-sandbox-title" class="schedule-demo-modal__form-title">Create your sandbox</h3>
+                            <p class="schedule-demo-modal__form-lead">We'll use this information to set up your account and email your
+                                login details.</p>
+                            <form class="schedule-demo-modal__form" id="schedule-demo-full-form" action="#" method="post" novalidate>
+                                <div class="schedule-demo-modal__field">
+                                    <label for="sd-work-email">Work email <abbr title="required">*</abbr></label>
+                                    <input id="sd-work-email" name="work_email" type="email" autocomplete="email"
+                                        placeholder="you@company.com" required>
+                                </div>
+                                <div class="schedule-demo-modal__row">
+                                    <div class="schedule-demo-modal__field">
+                                        <label for="sd-first-name">First name <abbr title="required">*</abbr></label>
+                                        <input id="sd-first-name" name="first_name" type="text" autocomplete="given-name"
+                                            placeholder="First name" required>
+                                    </div>
+                                    <div class="schedule-demo-modal__field">
+                                        <label for="sd-last-name">Last name <abbr title="required">*</abbr></label>
+                                        <input id="sd-last-name" name="last_name" type="text" autocomplete="family-name"
+                                            placeholder="Last name" required>
+                                    </div>
+                                </div>
+                                <div class="schedule-demo-modal__field">
+                                    <label for="sd-company">Company <abbr title="required">*</abbr></label>
+                                    <input id="sd-company" name="company" type="text" autocomplete="organization"
+                                        placeholder="Company name" required>
+                                </div>
+                                <div class="schedule-demo-modal__field">
+                                    <label for="sd-employees">Number of employees <abbr title="required">*</abbr></label>
+                                    <div class="schedule-demo-modal__select-wrap">
+                                        <select id="sd-employees" name="employees" required>
+                                            <option value="" disabled selected>Select range</option>
+                                            <option value="1-10">1–10</option>
+                                            <option value="11-50">11–50</option>
+                                            <option value="51-200">51–200</option>
+                                            <option value="201-1000">201–1,000</option>
+                                            <option value="1000+">1,000+</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <label class="schedule-demo-modal__consent">
+                                    <input type="checkbox" name="terms" id="sd-terms" checked>
+                                    <span>I agree to Telgoo5's <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</span>
+                                </label>
+                                <button type="button" class="login-page__submit" id="sd-create-sandbox-btn">Create sandbox</button>
+                            </form>
+                        </div>
+                        <div class="schedule-demo-modal__sandbox-success" id="sd-success-view" aria-hidden="true">
+                            <div class="schedule-demo-sandbox-success__box" role="status">
+                                <div class="schedule-demo-sandbox-success__ambient" aria-hidden="true"></div>
+                                <div class="schedule-demo-sandbox-success__icon-wrap" aria-hidden="true">
+                                    <div class="schedule-demo-sandbox-success__confetti" aria-hidden="true">
+                                        <span></span><span></span><span></span><span></span>
+                                        <span></span><span></span><span></span><span></span>
+                                    </div>
+                                    <span class="schedule-demo-sandbox-success__orbit"></span>
+                                    <span class="schedule-demo-sandbox-success__pulse"></span>
+                                    <span class="schedule-demo-sandbox-success__circle">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                </div>
+                                <p class="schedule-demo-sandbox-success__eyebrow">You’re in</p>
+                                <h3 id="sd-success-title" class="schedule-demo-sandbox-success__title">Sandbox created</h3>
+                                <p class="schedule-demo-sandbox-success__lead">Your sandbox is ready. We sent login steps to your work email — check your inbox shortly.</p>
+                                <button type="button" class="login-page__submit schedule-demo-sandbox-success__done" id="sd-success-done" data-demo-modal-close>
+                                    <span class="schedule-demo-sandbox-success__done-shine" aria-hidden="true"></span>
+                                    <span>Done</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="schedule-demo-modal__close" aria-label="Close dialog" data-demo-modal-close>
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-ui-core.min.js" id="jquery-ui-core-js"></script>
+    <script src="assets/js/jquery-ui-widget.min.js" id="jquery-ui-widget-js"></script>
+    <script src="assets/js/jquery-ui-mouse.min.js" id="jquery-ui-mouse-js"></script>
+    <script src="assets/js/jquery-ui-slider.min.js" id="jquery-ui-slider-js"></script>
+    <script src="assets/js/jquery-ui-button.min.js" id="jquery-ui-button-js"></script>
+    <script src="assets/js/popper.min.js" id="popper-js"></script>
+    <script src="assets/js/bootstrap.min.js" id="bootstrap-js"></script>
+    <script src="assets/js/magnific-popup.min.js" id="magnific-popup-js"></script>
+    <script src="assets/js/appear.js" id="appear-js"></script>
+    <script src="assets/js/parallax.min.js" id="parallax-js"></script>
+    <script src="assets/js/jquery.paroller.min.js" id="jquery-paroller-js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js" id="mCustomScrollbar-js"></script>
+    <script src="assets/js/owl.js" id="owl-js"></script>
+    <script src="assets/js/wow.js" id="wow-js"></script>
+    <script src="assets/js/swiper.min.js" id="swiper-js"></script>
+    <script src="assets/js/touchspin.js" id="touchspin-js"></script>
+    <script src="assets/js/odometer.js" id="odometer-js"></script>
+    <script src="assets/js/mixitup.js" id="mixitup-js"></script>
+    <script src="assets/js/jquery.meanmenu.min.js" id="jquery-meanmenu-js"></script>
+    <script src="assets/js/jquery.marquee.min.js" id="jquery-marquee-js"></script>
+    <script src="assets/js/nav-tool.js" id="nav-tool-js"></script>
+    <script>var usage_billing_ajax_url = '#';</script>
+    <script src="assets/js/usage-billing-script.js" id="usage-billing-script-js"></script>
+    <script src="assets/js/elementor-webpack.runtime.min.js" id="elementor-webpack-runtime-js"></script>
+    <script src="assets/js/elementor-frontend-modules.min.js" id="elementor-frontend-modules-js"></script>
+    <script src="assets/js/jquery-ui-position.min.js" id="jquery-ui-position-js"></script>
+    <script id="elementor-frontend-js-before">
+        var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close", "a11yCarouselPrevSlideMessage": "Previous slide", "a11yCarouselNextSlideMessage": "Next slide", "a11yCarouselFirstSlideMessage": "This is the first slide", "a11yCarouselLastSlideMessage": "This is the last slide", "a11yCarouselPaginationBulletMessage": "Go to slide" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile Portrait", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Landscape", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet Portrait", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Landscape", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } }, "hasCustomBreakpoints": false }, "version": "3.35.3", "is_static": false, "experimentalFeatures": { "additional_custom_breakpoints": true, "home_screen": true, "global_classes_should_enforce_capabilities": true, "e_variables": true, "cloud-library": true, "e_opt_in_v4_page": true, "e_components": true, "e_interactions": true, "e_editor_one": true, "import-export-customization": true }, "urls": { "assets": "assets\\/js\\/", "ajaxurl": "#", "uploadUrl": "assets\\/images" }, "nonces": { "floatingButtonsClickTracking": "c80c25600b" }, "swiperClass": "swiper", "settings": { "page": [], "editorPreferences": [] }, "kit": { "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 428, "title": "Usage Billing", "excerpt": "", "featuredImage": false } };
+        //# sourceURL=elementor-frontend-js-before
+    </script>
+    <script src="assets/js/elementor-frontend.min.js" id="elementor-frontend-js"></script><span
+        id="elementor-device-mode" class="elementor-screen-only"></span>
+    <script src="assets/js/main.js" defer></script>
+    <script>
+(function () {
+  var focusableSel =
+    'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
+  var bodyLockClass = 'schedule-demo-modal-open';
+  var lastFocus = null;
+  var activeModal = null;
+
+  function getFocusable(modal) {
+    return Array.prototype.slice.call(modal.querySelectorAll(focusableSel)).filter(function (el) {
+      return el.offsetParent !== null || el.classList.contains('schedule-demo-modal__close');
+    });
+  }
+
+  function closeModalEl(modal, restoreFocus) {
+    if (!modal) return;
+    modal.setAttribute('aria-hidden', 'true');
+    modal.classList.remove('is-open');
+    if (activeModal === modal) activeModal = null;
+    if (!document.querySelector('.schedule-demo-modal.is-open')) {
+      document.body.classList.remove(bodyLockClass);
+    }
+    if (restoreFocus !== false && lastFocus && typeof lastFocus.focus === 'function') {
+      lastFocus.focus();
+    }
+  }
+
+  function resetGetStarted() {
+    var f = document.getElementById('get-started-form');
+    if (f) f.reset();
+    var gs = document.getElementById('get-started-modal');
+    if (gs) {
+      gs.querySelectorAll('.schedule-demo-modal__emp-chip').forEach(function (chip) {
+        chip.classList.remove('is-selected');
+      });
+    }
+    var comms = document.getElementById('gs-comms-ok');
+    if (comms) comms.checked = true;
+  }
+
+  function resetScheduleDemo() {
+    var f = document.getElementById('schedule-demo-full-form');
+    if (f) f.reset();
+    var terms = document.getElementById('sd-terms');
+    if (terms) terms.checked = true;
+    var sel = document.getElementById('sd-employees');
+    if (sel) sel.selectedIndex = 0;
+    var panel = document.querySelector('.schedule-demo-modal__form-panel--sandbox');
+    if (panel) panel.classList.remove('is-success');
+    var sdModal = document.getElementById('schedule-demo-modal');
+    if (sdModal) sdModal.setAttribute('aria-labelledby', 'schedule-demo-sandbox-title');
+    var sv = document.getElementById('sd-success-view');
+    var fv = document.getElementById('sd-form-view');
+    if (sv) sv.setAttribute('aria-hidden', 'true');
+    if (fv) fv.removeAttribute('aria-hidden');
+  }
+
+  function openModal(modal, ev) {
+    if (!modal) return;
+    if (ev) ev.preventDefault();
+    document.querySelectorAll('.schedule-demo-modal.is-open').forEach(function (m) {
+      closeModalEl(m, false);
+    });
+    lastFocus = document.activeElement;
+    modal.setAttribute('aria-hidden', 'false');
+    modal.classList.add('is-open');
+    document.body.classList.add(bodyLockClass);
+    activeModal = modal;
+    if (modal.id === 'get-started-modal') {
+      resetGetStarted();
+      var em = document.getElementById('gs-work-email');
+      if (em) window.setTimeout(function () { em.focus(); }, 10);
+    } else if (modal.id === 'schedule-demo-modal') {
+      resetScheduleDemo();
+      var sd = document.getElementById('sd-work-email');
+      if (sd) window.setTimeout(function () { sd.focus(); }, 10);
+    }
+  }
+
+  document.querySelectorAll('.js-get-started-open').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      openModal(document.getElementById('schedule-demo-modal'), e);
+    });
+  });
+
+  document.querySelectorAll('.js-schedule-demo-open').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      openModal(document.getElementById('get-started-modal'), e);
+    });
+  });
+
+  document.querySelectorAll('[data-demo-modal-close]').forEach(function (el) {
+    el.addEventListener('click', function () {
+      var modal = el.closest('.schedule-demo-modal');
+      if (modal) closeModalEl(modal, true);
+    });
+  });
+
+  document.addEventListener('keydown', function (e) {
+    var open = document.querySelector('.schedule-demo-modal.is-open');
+    if (!open) return;
+    if (e.key === 'Escape') {
+      e.preventDefault();
+      closeModalEl(open, true);
+      return;
+    }
+    if (e.key !== 'Tab') return;
+    var nodes = getFocusable(open);
+    if (nodes.length === 0) return;
+    var first = nodes[0];
+    var last = nodes[nodes.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first.focus();
+    }
+  });
+
+  var gsm = document.getElementById('get-started-modal');
+  if (gsm) {
+    gsm.querySelectorAll('.schedule-demo-modal__emp-chip input[type="radio"]').forEach(function (radio) {
+      radio.addEventListener('change', function () {
+        gsm.querySelectorAll('.schedule-demo-modal__emp-chip').forEach(function (chip) {
+          chip.classList.remove('is-selected');
+        });
+        if (radio.checked && radio.closest('.schedule-demo-modal__emp-chip')) {
+          radio.closest('.schedule-demo-modal__emp-chip').classList.add('is-selected');
+        }
+      });
+    });
+  }
+
+  var formGs = document.getElementById('get-started-form');
+  if (formGs) {
+    formGs.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var m = document.getElementById('get-started-modal');
+      if (m) closeModalEl(m, true);
+      formGs.reset();
+      gsm &&
+        gsm.querySelectorAll('.schedule-demo-modal__emp-chip').forEach(function (chip) {
+          chip.classList.remove('is-selected');
+        });
+    });
+  }
+
+  function showSandboxCreated() {
+    var panel = document.querySelector('.schedule-demo-modal__form-panel--sandbox');
+    var sdModal = document.getElementById('schedule-demo-modal');
+    if (panel) panel.classList.add('is-success');
+    if (sdModal) sdModal.setAttribute('aria-labelledby', 'sd-success-title');
+    var sv = document.getElementById('sd-success-view');
+    var fv = document.getElementById('sd-form-view');
+    if (sv) sv.setAttribute('aria-hidden', 'false');
+    if (fv) fv.setAttribute('aria-hidden', 'true');
+    var doneBtn = document.getElementById('sd-success-done');
+    if (doneBtn) window.setTimeout(function () { doneBtn.focus(); }, 90);
+  }
+
+  var formSd = document.getElementById('schedule-demo-full-form');
+  if (formSd) {
+    formSd.addEventListener('submit', function (e) {
+      e.preventDefault();
+    });
+  }
+
+  var sdCreateBtn = document.getElementById('sd-create-sandbox-btn');
+  if (sdCreateBtn) {
+    sdCreateBtn.addEventListener('click', function () {
+      showSandboxCreated();
+    });
+  }
+})();
+    </script>
+</body>
+
+</html>
