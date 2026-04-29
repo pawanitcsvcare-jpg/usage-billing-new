@@ -219,13 +219,29 @@
                 <main class="sb-onboard__main" id="sb-onboard-main">
                     <div class="sb-invoice-done">
                         <header class="sb-invoice-done__hero">
-                            <div class="sb-invoice-done__badge" aria-hidden="true">
-                                <i class="fas fa-check"></i>
+                            <div class="sb-invoice-done__hero-deco" aria-hidden="true">
+                                <span class="sb-invoice-done__hero-orb sb-invoice-done__hero-orb--a"></span>
+                                <span class="sb-invoice-done__hero-orb sb-invoice-done__hero-orb--b"></span>
+                                <span class="sb-invoice-done__hero-sparkle sb-invoice-done__hero-sparkle--1"></span>
+                                <span class="sb-invoice-done__hero-sparkle sb-invoice-done__hero-sparkle--2"></span>
+                                <span class="sb-invoice-done__hero-sparkle sb-invoice-done__hero-sparkle--3"></span>
                             </div>
-                            <h2 class="sb-invoice-done__title">Congratulations!</h2>
-                            <p class="sb-invoice-done__lead">
-                                You’ve set up the building blocks of your pricing. On the right is a preview of your first invoice.
-                            </p>
+                            <div class="sb-invoice-done__hero-inner">
+                                <div class="d-flex flex-column">
+                                <div class="d-flex gap-3">
+                                <div class="sb-invoice-done__badge-wrap mb-0">
+                                    <div class="sb-invoice-done__badge" aria-hidden="true">
+                                        <span class="sb-invoice-done__badge-shine"></span>
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                </div>
+                                <h2 class="sb-invoice-done__title">Congratulations!</h2>
+                                </div>
+                                <p class="sb-invoice-done__lead ps-5 ms-4">
+                                    You’ve set up the building blocks of your pricing. On the right is a preview of your first invoice.
+                                </p>
+                                </div>
+                            </div>
                         </header>
 
                         <section class="sb-invoice-done__panel" aria-labelledby="invoice-done-next-heading">
@@ -234,7 +250,7 @@
                                 We created a Test Contract to demonstrate your pricing using a concrete example. Next, we recommend
                                 editing the Test Contract to model your typical customer relationship.
                             </p>
-                            <a href="#" class="sb-onboard__btn sb-onboard__btn--apply sb-invoice-done__cta">
+                            <a href="#" class="second-btns">
                                 Go to Contract
                                 <i class="fas fa-chevron-right" aria-hidden="true"></i>
                             </a>
@@ -349,9 +365,9 @@
                     <span class="sb-onboard__step sb-onboard__step--current">4. Next steps</span>
                 </p>
                 <div class="sb-onboard__footer-actions sb-onboard__footer-actions--end">
-                    <a href="#" class="sb-onboard__btn sb-onboard__btn--apply sb-invoice-done__footer-cta">
+                    <a href="#" class="sb-onboard__btn sb-onboard__btn--primary">
                         Go to Contract
-                        <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                        <i class="fas fa-chevron-right ps-2" aria-hidden="true"></i>
                     </a>
                 </div>
             </footer>
