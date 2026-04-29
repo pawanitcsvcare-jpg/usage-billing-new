@@ -2511,3 +2511,117 @@ body.schedule-demo-modal-open {
     opacity: 1 !important;
   }
 }
+
+/* --------------------------------------------------------------------------
+   Footer — brand column intro + contact details (Telgoo5 dark footer)
+   -------------------------------------------------------------------------- */
+
+.footer-telgoo-dark .footer-telgoo__contact-intro {
+  margin-bottom: 26px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.footer-telgoo-dark .footer-telgoo__contact-eyebrow {
+  margin: 0 0 10px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: rgba(129, 140, 248, 0.95);
+}
+
+.footer-telgoo-dark .footer-telgoo__contact-headline {
+  margin: 0 0 12px;
+  font-family: "Geist", system-ui, sans-serif;
+  font-size: clamp(1.02rem, 1.9vw, 1.2rem);
+  font-weight: 700;
+  line-height: 1.38;
+  letter-spacing: -0.025em;
+  color: #f1f5f9;
+}
+
+.footer-telgoo-dark .footer-telgoo__contact-headline-accent {
+  background: linear-gradient(100deg, #38bdf8 0%, #a78bfa 45%, #34d399 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.footer-telgoo-dark .footer-telgoo__contact-lead {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #94a3b8;
+}
+
+.footer-telgoo-dark .footer-telgoo__brand-widget .footer-telgoo__logo {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.footer-telgoo-dark .footer-telgoo__contact-details {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-telgoo-dark .footer-telgoo__contact-row {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 0 0 4px;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: #9ca3af !important;
+}
+
+.footer-telgoo-dark .footer-telgoo__contact-row:last-child {
+  margin-bottom: 0;
+}
+
+.footer-telgoo-dark .footer-telgoo__contact-mail {
+  margin-bottom: 7px;
+}
+
+.footer-telgoo-dark .footer-telgoo__contact-mail:last-child {
+  margin-bottom: 0;
+}
+
+.footer-telgoo-dark .footer-telgoo__contact-mail .footer-telgoo__contact-row {
+  margin-bottom: 0;
+}
+
+.footer-telgoo-dark .footer-telgoo__contact-label {
+  display: block;
+  margin: 0 0 0px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #cbd5e1;
+}
+
+.footer-telgoo-dark .footer-telgoo__contact-icon {
+  flex-shrink: 0;
+  width: 1.1em;
+  text-align: center;
+  color: #64748b;
+  margin-top: 3px;
+}
+
+.footer-telgoo-dark .footer-telgoo__contact-details .footer-telgoo__contact-row a {
+  color: #e2e8f0 !important;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease;
+}
+
+.footer-telgoo-dark .footer-telgoo__contact-details .footer-telgoo__contact-row a:hover {
+  color: #7dd3fc !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer-telgoo-dark .footer-telgoo__contact-details .footer-telgoo__contact-row a {
+    transition: none;
+  }
+}
