@@ -1420,7 +1420,7 @@ img{
 	color: var(--white-color);
 	font-size: var(--font-16);
 	text-transform: capitalize;
-	padding: 12px 33px 12px;
+	padding: 6px 33px 6px;
 	font-family: var(--font-family-Jost);
 	background: linear-gradient(94.53deg, #3872e5 1.27%, #4531d6 102.78%);
 }
